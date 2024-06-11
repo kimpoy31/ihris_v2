@@ -1,8 +1,15 @@
+<script setup lang="ts">
+    import ScreenContainer from "@/Layouts/ScreenContainer.vue";
+    import Navbar from "@/Components/Navbar.vue";
+</script>
+
 <template>
-    <div>Navbar asdasd
-        <button className="btn btn-accent">Accent</button>
-    </div>
-    <div>
-        <slot />
-    </div>
+    <ScreenContainer>
+        <div>
+            <Navbar />
+        </div>
+        <div>
+            <slot />
+        </div>
+    </ScreenContainer>
 </template>
